@@ -29,3 +29,26 @@ contoh: 4jan23
 
 references: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?platform=mac
 ```
+
+
+## how to push github
+
+```
+
+main -> dev
+        -> feature/develop-login -> michael
+            . sudah selesai, push code
+            . request merge ke dev
+    jika semua sudah selesai di dev,
+    . buka pull request ke main (branch utama)
+        -> feature/develop-register -> fahmi
+    -> stage
+
+step di git:
+1. git status -> check status
+2. git add .
+    -> jika tidak mau pusing
+    -> git add . (yang artinya add semua changes yang terjadi)
+3. git commit -m "pesan"
+4. git push origin [branch] -> main
+```
