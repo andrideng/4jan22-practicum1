@@ -52,3 +52,15 @@ step di git:
 3. git commit -m "pesan"
 4. git push origin [branch] -> main
 ```
+
+## hosting di firebase
+```
+1. url https://console.firebase.google.com/
+2. firebase login
+3. firebase init hosting
+    . pilih existing project
+    . pilih public
+    . enter overwrite index.html
+    . pindahkan file yang mau dideploy ke dalam public/ folder
+4. firebase deploy
+```
