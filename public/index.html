@@ -62,6 +62,15 @@
         <a class="content__btn btn--yellow" href="">Belajar HTML</a>
         <a class="content__btn btn--green" href="">Video Tutorial</a>
 
+        <div class="btn-container">
+            <a onclick="pressBtn()" id="press-me" class="btn--coral" href="#">
+                Tekan Saya
+            </a>
+            <div class="btn--coral-shadow"></div>
+        </div>
+        
+        
+
         <!-- show code pre -->
         <pre class="content__code">
 &lt;html&gt;
@@ -86,5 +95,18 @@
     <!-- ./footer -->
 
 </body>
+
+<script>
+    let press = true;
+    function pressBtn() {
+        if (press) {
+            document.getElementById('press-me').style = 'top:6px';
+            press = false;
+        } else {
+            document.getElementById('press-me').style = 'top:0px';
+            press = true;
+        }    
+    }
+</script>
 
 </html>
